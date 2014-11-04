@@ -1,0 +1,12 @@
+#How to set up a Mathematica pipe#
+
+1. If it doesn't already exist, create the pipe
+`mkfifo mmpipe`
+
+2. Create a process that will redirect the pipe to a python script
+`tail -f mmpipe | python mpipe.py &`
+
+3. Now echo Mathematica commands and redirect to the pipe
+`echo "Prime[10]" > mmpipe`
+
+
