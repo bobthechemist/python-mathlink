@@ -1,4 +1,5 @@
-== Mathlink bindings for Python ==
+# Mathlink bindings for Python #
+
 Adapted to work with the Raspberry Pi version of Mathematica
 
 1. Some notes
