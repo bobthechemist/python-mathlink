@@ -5,7 +5,7 @@ Adapted to work with the Raspberry Pi version of Mathematica
 1. Some notes
 * python code is not present in the RPi version but can be found in a desktop 
 installation
-* make sure python-dev is installed
+* make sure python-dev and uuid-dev are installed
 
 2. modify mathlink.c
 * Add #define MLINTERFACE 3 above the #include lines
@@ -26,7 +26,6 @@ installation
 	)
 	  
 4. Not sure if this is the best way to obtain the necesssary results, but
-* Copy /lib/arm-linux-gnueabihf/libuuid.so.1.3.0 to /usr/local/lib and rename to libuuid.so.  
 * Copy /opt/Wolfram/WolframEngine/10.0/SystemFiles/Links/Mathlink/DeveloperKit/Linux-ARM/CompilerAdditions/libML32i3.so to /usr/local/lib
 * Run sudo ldconfig
 
